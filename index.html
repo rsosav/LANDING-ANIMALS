@@ -10,6 +10,7 @@
 </head>
 <body>
 
+<!--//***** HEADER ******//-->
     <div class="header">
         <div class="header-text-container">
             <div class="phone">+880 4664 216</div>
@@ -22,9 +23,13 @@
             <div class="icono"><i class="fa-brands fa-linkedin-in"></i></div>
         </div>
     </div>
+
+<!--//****** HEADEREND ******//-->
+
+<!--//***** NAVBAR ******//-->
+
     
-    <div class="navbar"></div>
-    <div class="header">
+    <div class="navbar">
         <nav class="nav">
             <div class="logo"> 
                 LOGO
@@ -34,19 +39,37 @@
                 <i class="fas fa-bars"></i>
             </button> -->
 
-            <div ></div>
+            <div class="navbar-mobile">
+                <div class="inside-navbar-mobile">
+                <div class="mobile-menu-sign">MENU</div>
+                <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleMenuMobil()">
+                    <i class="fas fa-bars"></i>
+                </button> 
+                </div>
+            </div>
       
       
             <ul class="nav-menu">
                 <li class="nav-menu-item">
-                    <a class="nav-menu-link nav-link">THE PRODUCT</a>
+                    <a class="nav-menu-link nav-link">HOME</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a  class="nav-menu-link nav-link">FEATURES</a>
+                    <a  class="nav-menu-link nav-link">ABOUT</a>
                 </li>
                 <div class="d-flex-center d-sm-column">
                     <li class="nav-menu-item">
-                        <a  class="nav-menu-link nav-link"> SCREENS</a>
+                        <a  class="nav-menu-link nav-link"> BLOG</a>
+                    </li>
+                    <!-- <li class="nav-menu-item">
+                      <a  class="nav-menu-link nav-link"> OPCION 3</a>
+                  </li>
+                  <li class="nav-menu-item">
+                    <a  class="nav-menu-link nav-link"> OPCION 3</a>
+                </li> -->
+                </div>
+                <div class="d-flex-center d-sm-column">
+                    <li class="nav-menu-item">
+                        <a  class="nav-menu-link nav-link"> PAGES</a>
                     </li>
                     <!-- <li class="nav-menu-item">
                       <a  class="nav-menu-link nav-link"> OPCION 3</a>
@@ -56,16 +79,39 @@
                 </li> -->
                 </div>
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link">CONTACT</a>
+                    <a class="nav-menu-link nav-link">SERVICES</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link">DOWNLOAD</a
+                    <a class="nav-menu-link nav-link">CONTACT</a
                     >
                 </li>
             </ul>
         </nav>
-      </div>
+    </div>
+   
+
+<!--//***** NAVBAREND ******//-->
+<!--//***** WE CARE YOUR PETS ******//-->
+<div class="landing">
+    <div class="landing-left">
+    <div class="title-a">We Care <br></div>
+    <div class="title-b">Your Pets</div>
+    <div class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod.</div>
+    <a href="" class="btn-contact">Contact Us</a>
+    </div>
+    <div class="img-container"></div>
+</div>
+<!--//***** WE CARE YOUR PETS END******//-->
+
+
+
 
 </body>
 </html>
 
+<script>
+    function toggleMenuMobil(){
+                  let element = document.querySelector(".nav-menu");
+                  element.classList.toggle("nav-menu_visible");
+   }
+  </script>

@@ -6,6 +6,9 @@ padding: 0;
 
 //****** HEADER ******//
 .header {
+    position: relative;
+    z-index: 1000;
+    font-size: 1em;
     width: 100%;
     padding: 1em 0em 1em 0em;
     background-color: #1c1818;
@@ -14,12 +17,13 @@ padding: 0;
     align-items: center;
     justify-content: space-between;
     background-color: #1c1818;
-    margin-bottom: .5em;
+    //margin-bottom: .5em;
     .header-text-container{
         color: #f0fff0;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         width: 90%;
         color: #f0fff0;
         .phone{    
@@ -79,3 +83,203 @@ padding: 0;
 }
 
 //****** HEADER END ******//
+
+//****** NAVBAR ******//
+.navbar {
+    position: relative;
+   // z-index: 100;
+    .nav {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-between;
+        align-items: center;
+        .logo{
+            position: relative;
+            z-index: 1000;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: start;
+            padding-left: 0.5em;
+            font-size: 2em;
+            background-color: white;
+        }
+        .navbar-mobile{
+            
+            position: relative;
+            z-index: 1000;
+            width: 90%;
+            padding: 0.5em;
+            margin: -0.1em .7em 0em 0.7em;
+            // margin-top: .5em;
+            // margin-left: 1em;
+            display: flex;
+            justify-content: end;
+            background-color: #4c4c4c;
+            .inside-navbar-mobile{
+                display: flex;
+                background-color: #222222;;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0.5em;
+                border-radius: 0.3em;
+                .mobile-menu-sign {
+                margin-right: .5em;
+                color: white;
+            }
+            .nav-toggle {
+                background: transparent;
+                color: #fff;
+                padding: 0;
+                border: none;
+                cursor: pointer;
+
+                
+            }
+        
+            .nav-toggle:focus:not(:focus-visible) {
+                outline: none;
+              }
+        
+        
+        
+        }
+            
+        }
+        // .nav-menu{
+        //     display: none;
+        // }
+        .nav-menu_visible {
+            margin-top: 0% !important;
+          }
+
+        .nav-menu{
+            //padding: 2em 2em;
+            list-style: none;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin: 0;
+            background-color: #4c4c4c;
+            color: white;
+            //background: linear-gradient(70deg, #6a58f2, #9542d8);
+            position: relative;
+            //top: 4.1em;
+            //width: inherit;
+            padding: 1.5 0;
+        
+            height: calc(100% - 4em);
+            overflow-y: auto;
+            transition: left 0.9s;
+            margin-top: -100%;
+            
+              .nav-menu-item {
+                font-size: 1em;
+                margin: 0px;
+                text-transform: uppercase;
+                width: max-content;
+                font-weight: bold;
+                line-height: 1.5em;
+                margin-bottom: .5em;
+                padding: 0em 0em;
+                /* border-bottom: 0.1em solid white; */
+                border-left: 0.1em solid white;
+                border-radius: 1em;
+        
+        
+                .nav-menu-link{
+                padding: .5em .6em;
+                border-radius: .5em;
+                }
+                .nav-link{
+                  
+                  padding: .5em .8em;
+                 // border-radius: .2em;
+        
+                }
+              }
+            }
+
+    }
+
+}
+
+@media screen and (min-width: 993px){
+    .navbar {
+        .nav {
+            flex-direction: row;
+            justify-content: space-between;
+            .logo{
+                width: fit-content;
+            }
+            .navbar-mobile{ 
+                display: none;
+            }
+            .nav-menu{
+                margin: 1em 2em 0 0;
+                padding: 0;
+                font-size: .8em;
+                font-weight: 900;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                list-style: none;
+                background-color: transparent;
+                border: none;
+                color: black;
+                .nav-menu-item {
+                    padding:  0em 1em;
+                }
+            }
+        }
+    
+    }
+}
+
+
+//****** NAVBAR END******//
+
+//****** WE CARE YOUR PETS ******//
+.landing {
+    background: linear-gradient(90deg, #e62e2d, #e86029); 
+    margin-top: 4em;
+    padding: 5em 1.5em 2em 1.5em;
+    .landing-left {
+        color: #fff;
+        .title-a {
+            font-size: 3em;
+            font-weight: revert;
+        }
+        .title-b {
+            font-size: 3em;
+            font-weight: bolder;
+        }
+        .parrafo {
+            margin-top: .5em;
+            margin-bottom: 2em;
+            font-size: 1.2em;
+            font-weight: lighter;
+
+        }
+        .btn-contact {
+
+            margin-bottom: 2em;
+            padding: 1em 3em;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 2em;
+            background-color: white;
+            color: #e62e2d;
+            
+        }
+        
+    }
+    .img-container {
+        display: none;
+    }
+}
+//****** WE CARE YOUR PETS END******//
