@@ -60,7 +60,7 @@ padding: 0;
         .header-text-container{
             justify-content: start;
             width: 40%;
-            margin-left: 8em;
+            margin-left: 7.5em;
             
             .phone{
             }
@@ -69,7 +69,7 @@ padding: 0;
         }
         .header-icons-container{
             width: 20%;
-            margin-right: 8em;
+            margin-right: 7.5em;
             .icono{
                 i{
                 }
@@ -210,17 +210,20 @@ padding: 0;
 
 @media screen and (min-width: 993px){
     .navbar {
+        padding: 1.5em 0 1.5em 0;
         .nav {
             flex-direction: row;
             justify-content: space-between;
             .logo{
+                
+                padding-left: 3.8em;
                 width: fit-content;
             }
             .navbar-mobile{ 
                 display: none;
             }
             .nav-menu{
-                margin: 1em 2em 0 0;
+                margin: 1em 8em 0 0;
                 padding: 0;
                 font-size: .8em;
                 font-weight: 900;
@@ -245,30 +248,31 @@ padding: 0;
 
 //****** WE CARE YOUR PETS ******//
 .landing {
-    background: linear-gradient(90deg, #e62e2d, #e86029); 
-    margin-top: 4em;
-    padding: 5em 1.5em 2em 1.5em;
+    //background: linear-gradient(90deg, #e62e2d, #e86029); 
+    background: url(../assets/background-landing.webp);
+    margin-top: 3em;
+    padding: 8em 1.5em 3em 1.5em;
     .landing-left {
         color: #fff;
         .title-a {
-            font-size: 3em;
+            font-size: 2.7em;
             font-weight: revert;
         }
         .title-b {
-            font-size: 3em;
+            font-size: 2.7em;
             font-weight: bolder;
         }
         .parrafo {
             margin-top: .5em;
             margin-bottom: 2em;
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: lighter;
 
         }
         .btn-contact {
 
             margin-bottom: 2em;
-            padding: 1em 3em;
+            padding: .5em 2em;
             text-decoration: none;
             font-size: 1.2em;
             border-radius: 2em;
@@ -282,4 +286,465 @@ padding: 0;
         display: none;
     }
 }
+
+@media screen and (min-width: 993px){
+
+
+    .landing {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 7.5em 0em 3em 0em;
+        .landing-left {
+            padding: 0em 7em;
+            width: 30em;
+            .title-a {
+                font-size: 4.5em;
+            }
+            .title-b {
+                font-size: 4.5em;
+            }
+            .parrafo {
+                font-size: 1.5em;
+            }
+            .btn-contact {
+                
+            }
+            
+        }
+        .img-container {
+            z-index: 100;
+            margin: 0em 0em 0em -4em;
+            display: block;
+            background-color: black;
+            width: 20em;
+            height: 30em;
+        }
+    }
+
+
+}
 //****** WE CARE YOUR PETS END******//
+
+
+//****** CANVAS 1 ******//
+.canvas1{
+    //background: linear-gradient(90deg, #e62e2d, #e86029); 
+    background: url(../assets/background-landing.webp);
+    margin-top: -1em;
+    //height: 4em;
+    width: 100%;
+    padding: 0;
+
+
+}
+@media screen and (min-width: 993px){
+.canvas1{
+
+    margin-top: -14em; 
+}
+}
+
+
+//****** CANVAS 1 END******//
+
+
+//****** SERVICES ******//
+
+
+.services-container {
+    background-color: #fff;
+    padding: 2em 0;
+    margin-top: -1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        color: #191d34;
+        width: 100%;
+        font-size: 2em;
+        font-weight: 900;
+        text-align: center;
+    }
+    .parrafo {
+        max-width: 24em;
+        padding: 0.5em 0;
+        color: #909dbe;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: lighter;
+    }
+    .all-services{
+
+        display: flex;
+        direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    .service {
+        margin: 2em 1em;
+        width: 20em;
+        border: .1em solid #f4c4c2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: .5em;
+        .dog-container{
+
+            margin-top: 3em;
+            width: 8em;
+            height: 8em;
+            //background-color: orange;
+            background: url(../assets/background-landing.webp);
+
+            // .triangle-up {
+            //     width: 0;
+            //     height: 0;
+            //     border-left: 4em solid transparent;
+            //     border-right: 4em solid transparent;
+            //     border-bottom: 8em solid red;
+            //     border-radius: 1em;
+            //   }
+        }
+        .service-title{
+            color: #191d34;
+            margin-top: 1em;
+            width: 100%;
+            font-size: 1.3em;
+            font-weight: 900;
+            text-align: center;
+        }
+        .service-description{
+            width: 90%;
+            padding: 0.5em 0;
+            color: #909dbe;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: lighter;
+            margin-bottom: 2em;
+        }
+    }
+    }
+
+    }
+
+    @media screen and (min-width: 993px){
+
+        .services-container {
+            .title {
+                font-size: 3.5em;
+            }
+            .parrafo {
+                //width: 60%;
+            }
+            .all-services{
+            .service {
+                width: 15em;
+                .dog-container{
+                }
+                .service-title{
+                }
+                .service-description{
+                }
+            }
+            }
+        
+            }
+   
+    
+
+    }
+
+//****** SERVICES END******//
+
+
+//****** WE CARE CONTAINER******//
+
+    .we-care{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img-container {
+            
+            background-color: black;
+            width: 20em;
+            height: 30em;
+        }
+        .text-container {
+        margin-top: 2em;
+        padding: 0em 0em 0em 1em;  
+        .title-a {
+            color: #191d34;
+            font-size: 2em;
+            font-weight: revert;
+        }
+        .title-b {
+            color: #191d34;
+            font-size: 2em;
+            font-weight: 900;
+        }
+        .parrafo {
+            color: #66666f;
+            margin-top: 2em;
+            margin-bottom: 3em;
+            font-size: 1.2em;
+            font-weight: lighter;
+
+        }
+        .btn-about{
+            margin-bottom: 2em;
+            padding: .5em 2em;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 2em;
+            background-color: #e62e2d;;
+            color: #fff;
+        }
+    }
+      
+    }
+
+    @media screen and (min-width: 993px){
+    
+        .we-care{
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 4em;
+
+            
+            .img-container {
+                margin-right: 6em;
+            
+            }
+            .text-container {
+                margin-left: 6em;
+                width: 30em;
+            
+            .title-a {
+                font-size: 3.5em; 
+                
+            }
+            .title-b {
+                font-size: 3.5em; 
+              
+                
+            }
+            .parrafo {
+               
+    
+            }
+            .btn-about{
+                
+            }
+        }
+          
+        }
+
+
+    }
+
+
+        
+
+//****** WE CARE CONTAINER END******//
+
+//****** WE NEED YOUR HELP CONTAINER******//
+.we-need{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .text-container {
+    margin-top: 3em;
+    padding: 0em 0em 0em 1em;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .title-a {
+        width: fit-content;
+        color: #191d34;
+        font-size: 2em;
+        font-weight: revert;
+    }
+    .title-b {
+        width: fit-content;
+        margin-left: .2em;
+        color: #191d34;
+        font-size: 2em;
+        font-weight: 900;
+    }
+    .parrafo {
+        width: 100% ;
+        color: #66666f;
+        margin-top: 2em;
+        margin-bottom: 3em;
+        font-size: 1.2em;
+        font-weight: lighter;
+
+    }
+    .btn-about{
+        margin-bottom: 2em;
+        padding: .5em 2em;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 2em;
+        background-color: #e62e2d;;
+        color: #fff;
+    }
+    }
+
+    .numbers-container{
+        max-width: 50em;
+        
+        //background-color: #00ffff;
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        .numbers-box1 {
+            border: none;
+            border-radius: 1em;
+            box-shadow: 0em 0.2em 0.5em 0.2em #ededed;
+            color: #191d34;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20em;
+            margin: 2em;
+            .pet-photo{
+                margin: 2em;
+                height: 4em;
+                width: 4em;
+                background-color: gray;
+            }
+            .number-value {
+                font-size: 4em;
+                font-weight: 900;
+            }
+            .number-description {
+                font-size: 1.4em;
+                font-weight: lighter;
+            }
+        }
+        .numbers-box2{
+            border: none;
+            border-radius: 1em;
+            box-shadow: 0em 0.2em 0.5em 0.2em #ededed;
+            color: #191d34;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20em;
+            margin: 2em;
+            .pet-photo{
+                margin: 2em;
+                height: 4em;
+                width: 4em;
+                background-color: gray;
+            }
+            .number-value {
+                font-size: 4em;
+                font-weight: 900;
+            }
+            .number-description {
+                font-size: 1.4em;
+                font-weight: lighter;
+            }
+        }
+        .numbers-box3{
+            border: none;
+            border-radius: 1em;
+            box-shadow: 0em 0.2em 0.5em 0.2em #ededed;
+            color: #191d34;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20em;
+            margin: 2em;
+            .pet-photo{
+                margin: 2em;
+                height: 4em;
+                width: 4em;
+                background-color: gray;
+            }
+            .number-value {
+                font-size: 4em;
+                font-weight: 900;
+            }
+            .number-description {
+                font-size: 1.4em;
+                font-weight: lighter;
+            }
+        }
+
+    }
+    
+}
+
+@media screen and (min-width: 993px){
+
+    .we-need{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 4em;
+
+        
+        .text-container {
+            margin-top: 10em;
+            margin-left: 6em;
+            margin-right: 3em;
+            width: 25em;
+        
+        .title-a {
+            font-size: 3.5em; 
+            
+        }
+        .title-b {
+            font-size: 3.5em; 
+          
+            
+        }
+        .parrafo {
+           
+
+        }
+        .btn-about{
+            
+        }
+    }
+
+    .numbers-container{
+
+
+    .numbers-box1 {  
+        width: 10em;
+        position: relative;
+        top: 0em;
+        left: 12em;
+
+    }
+
+    .numbers-box2{
+        width: 10em;
+        position: relative;
+        top: -4em;
+        left: 0em;
+    }
+
+    .numbers-box3{
+        width: 10em;
+        position: relative;
+        top: -15em;
+        left: 14em;
+    }
+    }
+      
+    }
+
+
+}
+
+
+//****** WE NEED YOUR HELP CONTAINER END******//
