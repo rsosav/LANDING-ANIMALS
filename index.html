@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/styles.css?v=1.0.0" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    
+    
+    <link href="css/slick.css?v=1.0.0" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/c81afd1739.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    
+    
+
 </head>
 <body>
 
@@ -32,7 +40,7 @@
     <div class="navbar">
         <nav class="nav">
             <div class="logo"> 
-                LOGO
+                <img src="assets/descarga.webp" alt="">
             </div>
       
             <!-- <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleMenuMobil()">
@@ -100,7 +108,9 @@
     <div class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod.</div>
     <a href="" class="btn-contact">Contact Us</a>
     </div>
-    <div class="img-container"></div>
+    <div class="img-container">
+        <img src="assets/xdog.png.webp" alt="">
+    </div>
 </div>
 <!--//***** WE CARE YOUR PETS END******//-->
 
@@ -118,10 +128,11 @@
     <div class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, vitae laboriosam maiores sed soluta pariatur consequuntur dolorem </div>
     <div class="all-services">
         <div class="service">
+        <div class="shadow-container">
+            <img src="assets/service_icon_bg_1.png.webp" alt="">
+        </div>
         <div class="dog-container">
-            <div class="triangle-up">
-                perro
-            </div> 
+            <img src="assets/xservice_icon_1.png.pagespeed.ic.fyhO6Am5FW.webp" alt="">
         </div>
         <div class="service-title">Pet Boarding</div>
         <div class="service-description">
@@ -129,10 +140,11 @@
         </div>
         </div>
         <div class="service">
+        <div class="shadow-container">
+            <img src="assets/service_icon_bg_1.png.webp" alt="">
+        </div>
         <div class="dog-container">
-            <div class="triangle-up">
-                perro
-            </div> 
+            <img src="assets/xservice_icon_2.png.pagespeed.ic.vTFW90v-__.webp" alt=""></img>
         </div>
         <div class="service-title">Healthy Meals</div>
         <div class="service-description">
@@ -140,10 +152,11 @@
         </div>
         </div>
         <div class="service">
+        <div class="shadow-container">
+            <img src="assets/service_icon_bg_1.png.webp" alt="">
+        </div>
         <div class="dog-container">
-            <div class="triangle-up">
-                perro
-            </div> 
+            <img src="assets/xservice_icon_3.png.pagespeed.ic.KzF9U6nKW3.webp" alt=""></img>
         </div>
         <div class="service-title">Pet Spa</div>
         <div class="service-description">
@@ -158,7 +171,9 @@
 
 <!--//***** WE CARE CONTAINER ******//-->
 <div class="we-care">
-    <div class="img-container"></div>
+    <div class="img-container">
+        <img src="assets/xpet_care.png.pagespeed.ic.9EUPVNU5Ce.webp" alt="">
+    </div>
     <div class="text-container">
         <div class="title-a">We care your pet</div>
         <div class="title-b">As you care</div>
@@ -189,7 +204,7 @@
     <div class="numbers-container">
         <div class="numbers-box1">
                 <div class="pet-photo">
-                    perro
+                    <img src="assets/x1.png.pagespeed.ic.gP4wnFR8vR.webp" alt="">
                 </div> 
                 <div class="number-value">452</div>
                 <div class="number-description">Pets available</div>
@@ -197,7 +212,7 @@
         
         <div class="numbers-box2">
                 <div class="pet-photo">
-                    perro
+                    <img src="assets/x2.png.pagespeed.ic.5xVBFHD5Ii.webp" alt="">
                 </div> 
                 <div class="number-value">52+</div>
                 <div class="number-description">Pets available</div>
@@ -205,7 +220,7 @@
         
         <div class="numbers-box3">
                 <div class="pet-photo">
-                    perro
+                    <img src="assets/x3.png.pagespeed.ic.L0x1lZnC24.webp" alt="">
                 </div> 
                 <div class="number-value">52+</div>
                 <div class="number-description">Pets available</div>
@@ -219,46 +234,95 @@
 
 <!--//***** TESTIMONY SLIDER ******//-->
 
-
 <!-- <div class="container-gallery">
     <div id="gallery" class="gallery">
-      <div class="container">
-        <div class="title-style-1">Photo Gallery</div>
-  
-        <div class="images">
+        <div class="container">
+            <div class="title-style-1">Photo Gallery</div>
 
-          <div class="image-container" >
-  
-          <div class="img-container">IMG 1</div>
-  
-          </div>
-  
-          <div 
-            class="image-container" 
-          >
-          <div class="img-container">IMG 2</div>
-  
-          </div>
-  
-          <div 
-            class="image-container" 
-          >
-          <div class="img-container">IMG 3</div>
-            
-          </div>
-  
-          <div 
-            class="image-container" 
-          >
-          <div class="img-container">IMG 4</div>
-            
-          </div>
-  
-          
+            <div class="images">
+                <div 
+                    class="image-container" 
+                    data-image="assets/background/galery-1.jpg"
+                >
+                    <div 
+                        class="image" 
+                        style="background-image: url(assets/background/galery-1.jpg);"
+                    ></div>
+                </div>
+
+                <div 
+                    class="image-container" 
+                    data-image="assets/background/galery-2.jpg"
+                >
+                    <div 
+                        class="image" 
+                        style="background-image: url(assets/background/galery-2.jpg);"
+                    ></div>
+                </div>
+
+                <div 
+                    class="image-container" 
+                    data-image="assets/background/galery-3.jpg"
+                >
+                    <div 
+                        class="image" 
+                        style="background-image: url(assets/background/galery-3.jpg);"
+                    ></div>
+                </div>
+
+                <div 
+                    class="image-container" 
+                    data-image="assets/background/galery-4.jpg"
+                >
+                    <div 
+                        class="image" 
+                        style="background-image: url(assets/background/galery-4.jpg);"
+                    ></div>
+                </div>
+
+                <div 
+                    class="image-container" 
+                    data-image="assets/background/galery-5.jpg"
+                >
+                    <div 
+                        class="image" 
+                        style="background-image: url(assets/background/galery-5.jpg);"
+                    ></div>
+                </div>
+
+                <div 
+                    class="image-container" 
+                    data-image="assets/background/galery-6.jpg"
+                >
+                    <div 
+                        class="image" 
+                        style="background-image: url(assets/background/galery-6.jpg);"
+                    ></div>
+                </div>
+
+                <div 
+                    class="image-container" 
+                    data-image="assets/background/galery-7.jpg"
+                >
+                    <div 
+                        class="image" 
+                        style="background-image: url(assets/background/galery-7.jpg);"
+                    ></div>
+                </div>
+
+                <div 
+                    class="image-container" 
+                    data-image="assets/background/galery-8.jpg"
+                >
+                    <div 
+                        class="image" 
+                        style="background-image: url(assets/background/galery-8.jpg);"
+                    ></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-</div>  -->
+</div> -->
 
 <!--//***** TESTIMONY SLIDER ******//-->
 
@@ -269,21 +333,27 @@
     <div class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, vitae laboriosam maiores sed soluta pariatur consequuntur dolorem </div>
     <div class="team-container">
         <div class="team-member">
-        <div class="img-container"></div>
+        <div class="img-container">
+            <img src="assets/x1.png.pagespeed.ic.MD3V44-eD7.webp" alt="">
+        </div>
         <div class="member-container">
         <div class="member-name">Rala Emaia</div>
         <div class="member-position">Senior Director</div>
         </div>
         </div>
         <div class="team-member">
-        <div class="img-container"></div>
+        <div class="img-container">
+            <img src="assets/x2.png.pagespeed.ic.YP-Up_GKrh.webp" alt="">
+        </div>
         <div class="member-container">
         <div class="member-name">Jhon Smith</div>
         <div class="member-position">Senior Director</div>
         </div>
         </div>
         <div class="team-member">
-        <div class="img-container"></div>
+        <div class="img-container">
+            <img src="assets/x3.png.pagespeed.ic.X-vbEESfqh.webp" alt="">
+        </div>
         <div class="member-container">
         <div class="member-name">Jane Doe</div>
         <div class="member-position">Senior Director</div>
@@ -358,7 +428,10 @@
     <div class="option">Knowledge Base</div>
     </div>
     <div class="footer-item">
-    <div class="title">LOGO</div>
+    <div class="title">
+        <img src="assets/descarga.webp" alt="">
+        
+    </div>
     <div class="option">239 E 5th St, New York NY 10003, USA</div>
     <div class="header-icons-container">
         <div class="icono"><i class="fa-brands fa-facebook-f"></i></div>
