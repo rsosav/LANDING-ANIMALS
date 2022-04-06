@@ -92,7 +92,13 @@ font-family: 'Poppins', sans-serif;
 
 //****** NAVBAR ******//
 .navbar {
-    position: relative;
+    //position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
    // z-index: 100;
     .nav {
         background-color: white;
@@ -216,12 +222,13 @@ font-family: 'Poppins', sans-serif;
 
 @media screen and (min-width: 993px){
     .navbar {
-        padding: 1.5em 0 1.5em 0;
+        padding:0;
         .nav {
             flex-direction: row;
             justify-content: space-between;
             .logo{
                 
+                margin: 0.5em 0;
                 padding-left: 3.8em;
                 width: fit-content;
             }
@@ -839,17 +846,52 @@ font-family: 'Poppins', sans-serif;
 				width: 100%;
 				margin-top: 3em;
 				.image-container
-				{
+				{   position: relative;
 					width: 100%;
 					height: 18em;
-					background-color: #707070;
+					//background-color: #707070;
 					margin-top: 2em;
-          
-        display: flex;
-        align-items: center;
-        justify-content: center;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    //align-items: center;
+                    //justify-content: center;
 
 					cursor: pointer;
+
+                    .text-container{
+                        position: absolute;
+                        left: 17em;
+                        top: 3em;
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        .title-a{
+                            font-size: 1.5em;
+                            font-weight: 900;
+                        }
+                        .title-b{
+                            font-size: 1em;
+                            margin-bottom: .5em;
+                            //@debug: 900;
+                        }
+                        .parrafo{
+                            font-size: 1.2em;
+                        }
+                    }
+                    .fotoT {
+                        width: fit-content;
+                        height: 100%;
+                         img{
+                            //display: block;
+                            position: absolute;
+                            left: 3em;
+                            top: 2em;
+                            height: 80%;
+                            
+                        }
+                    }
 
 
 					.image
@@ -927,6 +969,8 @@ font-family: 'Poppins', sans-serif;
 	{
 		.container-gallery{
 			padding: 0 6em;
+            margin-top: -14em;
+            margin-bottom: 10em;
 			.gallery
 			{
 				padding: 4em 0;
@@ -939,6 +983,36 @@ font-family: 'Poppins', sans-serif;
 					{
 						margin-top: 0;
 						height: 18em;
+
+
+                        .text-container{
+                            left: 17em;
+                            top: 1em;
+                             width: 70%;
+                            // display: flex;
+                            // flex-direction: column;
+                            // justify-content: flex-start;
+                            .title-a{
+                                font-size: 2em;
+                                font-weight: 900;
+                            }
+                            .title-b{
+                                font-size: 1.5em;
+                                margin-bottom: .5em;
+                                //@debug: 900;
+                            }
+                            .parrafo{
+                                font-size: 1.5em;
+                            }
+                        }
+
+                        .fotoT{
+                            img{
+                                
+                                left: 1em;
+                                top: 2em;
+                                height: 80%;}
+                        }
 
 						.image
 						{
@@ -1152,8 +1226,18 @@ font-family: 'Poppins', sans-serif;
         .ask-why{
 
             background: url(../assets/background-landing2.webp);
-            background-position: center;
+            
+            background-position: center center;
             background-size: cover;
+            padding-top: 170px;
+            padding-bottom: 160px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+
+            
+            //background-position: center;
+            //background-size: cover;
             margin-top: 0em;
             padding: 5em 0; 
             color: white;   
